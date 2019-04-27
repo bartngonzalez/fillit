@@ -6,7 +6,7 @@
 #    By: bgonzale <bgonzale@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/04 17:23:02 by bgonzale          #+#    #+#              #
-#    Updated: 2019/01/09 12:45:11 by bgonzale         ###   ########.fr        #
+#    Updated: 2019/04/26 21:11:28 by bgonzale         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -160,7 +160,7 @@ $(NAME): $(LOFILES)
 	$(CC) $(CFLAGS) -I=$(HEADER) -o $(NAME) $(CFILES) $(LIBFT)
 
 $(LOFILES): $(LCFILES)
-	$(CC) -c $(CLAGS) -I=$(LHEADER) $(LCFILES)
+	$(CC) -c $(CFLAGS) -I=$(LHEADER) $(LCFILES)
 
 clean:
 	rm -rf $(OFILES) $(LOFILES)
